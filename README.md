@@ -151,7 +151,8 @@ berichte: [
 ]
 ```
 
-Danach GitHub Pages aktivieren (Branch `main`, Ordner `/`).
+Danach GitHub Pages aktivieren (Quelle: GitHub Actions). Veröffentlicht wird nach grüner Prüfung
+über `.github/workflows/pruefung.yml`, hochgeladen werden nur die Dateien der Seite.
 
 ---
 
