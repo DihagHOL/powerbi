@@ -81,7 +81,9 @@ const PBI_CONFIG = {
 
   itMail: "ticket@dihag.com",
 
-  // Offizielle Power-BI-Bibliothek. Liegt versioniert im Repo unter
-  // js/vendor/ – falls die Datei fehlt, wird das CDN als Ersatz geladen.
+  // Offizielle Power-BI-Bibliothek. Liegt versioniert im Repo unter js/vendor/
+  // (powerbi-client 2.23.1 aus der npm-Registry, MIT, SHA-256 af2680a9f1077bdc…179f12d3).
+  // Bis zum 16.11.2026 fehlte die Datei: Jeder Start lief erst in einen 404 und holte sie
+  // dann vom CDN. Das CDN bleibt nur als Ersatz, falls die Datei einmal fehlt.
   clientLibCdn: "https://cdn.jsdelivr.net/npm/powerbi-client@2.23.1/dist/powerbi.min.js"
 };
