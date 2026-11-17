@@ -5,7 +5,7 @@
 
    Eine Regel ordnet einem **Prinzipal** Berichte zu:
 
-     typ "benutzer"  wert = E-Mail/UPN            (z. B. fedorov@dihag.com)
+     typ "benutzer"  wert = E-Mail/UPN            (z. B. erika.muster@dihag.com)
      typ "gruppe"    wert = Objekt-Id der Gruppe  (Sicherheits-, Microsoft-365-,
                                                    Verteiler- oder dynamische Gruppe)
      typ "domaene"   wert = E-Mail-Domäne         (z. B. dihag.com)

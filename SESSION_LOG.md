@@ -168,7 +168,7 @@ darf den Bericht lesen – aber `GenerateToken` scheitert mit
 
 **Ursache gefunden:** `datasetWorkspaceId` des Berichts ist
 `226be186-189e-4aa1-914f-773f96ea0b0b` (**`DEV_Semantic_Models_Central`**,
-Modell „Aktuelle DIHAG Geschäftspartner", Besitzer kutscher@dihag.com) – ein
+Modell „Aktuelle DIHAG Geschäftspartner", Besitzer vorname.nachname@dihag.com) – ein
 anderer Arbeitsbereich als der des Berichts. Beide liegen auf derselben F4.
 Die Mandanteneinstellungen sind korrekt: *Embed content in apps* = True,
 *Service principals can call Fabric public APIs* = True.
@@ -353,7 +353,7 @@ ueberhaupt zum Zug kommen.
 
 ## 2026-09-04 (6): Verbrauch sichtbar, fedorov kein Haupt-Administrator mehr
 
-**Denis:** „fedorov@dihag.com als Admin rausnehmen. Wie viel Verbrauch entsteht
+**Denis:** „vorname.nachname@dihag.com als Admin rausnehmen. Wie viel Verbrauch entsteht
 bei einem Oeffnen des Berichts haette ich gerne als admin sichtbar."
 
 **1) Haupt-Administration:** `ADMIN_UPNS` steht jetzt nur noch auf
@@ -401,7 +401,7 @@ existiert. Er wird jetzt uebersprungen, solange die Variablen fehlen – ein rot
 blinkendes Repository, das nur „noch nicht eingerichtet" meint, nuetzt niemandem.
 
 **Beobachtung, nicht angetastet:** In der Regeltabelle steht seit 10:30 eine
-Regel `benutzer fedorov@dihag.com -> bericht1` (angelegt ueber die Oberflaeche,
+Regel `benutzer vorname.nachname@dihag.com -> bericht1` (angelegt ueber die Oberflaeche,
 nicht von mir). Damit ist deny-by-default aktiv: ausser fedorov sieht derzeit
 **niemand** ausser dem Haupt-Administrator den Bericht.
 
@@ -422,7 +422,7 @@ die beiden sind wirklich fremd.)
 **Ursache gefunden:** Unsere Instanz war seit **Juli 2025** kaputt. Der
 Refresh-Fehler war eindeutig: *„No capacities found. You need to be a capacity
 admin of at least one or more capacities."* Konfiguriert war sie von
-`peter.zimmermann@areto.de` – einem externen Berater ohne Kapazitaetsrechte.
+`vorname.nachname@berater.example` – einem externen Berater ohne Kapazitaetsrechte.
 
 **Gemacht:**
 1. Semantikmodell auf `administrator@dihag.com` uebernommen (`Default.TakeOver`)
